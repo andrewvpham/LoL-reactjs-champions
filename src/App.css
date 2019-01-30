@@ -1,5 +1,11 @@
+body {
+  background: black;
+}
+
 .App {
+  padding-top: 15%;
   text-align: center;
+  position: relative;
 }
 
 .App-logo {
@@ -20,6 +26,36 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.championInfo {
+  display: inline-block;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 1%;
+  background: rgba(81,81,81,0.8);
+  color: white;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.championInfo:hover {
+  transform: scale(1.5);
+}
+
+.champOverlay {
+  background: rgba(81,81,81,1);
+  color: white;
+  width: 45%;
+  padding-bottom: 5%;
+  margin: 0 auto;
+  margin: -15%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  min-width: 640px;
 }
 
 @keyframes App-logo-spin {
